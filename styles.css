@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: manifold-cf, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+}
+
+body {
+  background-color: #fff;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header, .header {
+  height: 100vh; 
+  background-image: url('shapes-bg-color.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #172A3A;
+  text-transform: uppercase;
+  font-family: amboy-black, sans-serif;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #424B54;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #57978b;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: amboy-black, sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  background: #0e1a2b;
+  padding: 20px;
+  text-align: center;
+  color: #dcdcdc;
+  font-size: 0.9rem;
+  border-top: 1px solid #ffd700;
+}
+
+.scroll-down-btn, .scroll-down-btn-overview, .scroll-down-btn-planets {
+  padding: 10px 50px;
+  margin: 20px;
+  box-shadow: 5px 5px 0px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.scroll-down-btn-overview {
+  background-color: #FFFC31;
+  color: #F76F8E;
+  border: 2px solid #424B54;
+  padding: 10px 20px;
+  margin: 20px;
+  box-shadow: 5px 5px 0px #424B54; /* Ensure this matches with others */
+  transition: box-shadow 0.3s ease;
+}
+
+.scroll-down-btn-overview:hover {
+  box-shadow: 8px 8px 0px #424B54; /* Ensure this matches with others */
+}
+
+
+.scroll-down-btn {
+  background-color: #fff;
+  color: #F76F8E;
+  border: 2px solid #F76F8E;
+}
+
+.scroll-down-btn-overview {
+  background-color: #FFFC31;
+  color: #F76F8E;
+  border: 2px solid #172A3A;
+}
+
+.scroll-down-btn-planets {
+  background-color: #fff;
+  color: #172A3A;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin: 30px auto; /* Add margin-top to increase space above */
+  box-shadow: 5px 5px 0px #FFFC31;
+  transition: box-shadow 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.scroll-down-btn-planets {
+  margin-top: 40px; /* Adjust this value as needed */
+}
+
+
+.scroll-down-btn-planets:hover {
+  box-shadow: 8px 8px 0px #FFFC31;
+}
+
+.scroll-down-btn:hover {
+  box-shadow: 8px 8px 0px #F76F8E;
+}
+
+.header-gif, .planet-gif {
+  height: auto;
+  margin: 0 auto;
+}
+
+.header-gif {
+  width: 200px;
+  mix-blend-mode: multiply;
+}
+
+.planet-gif {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.solar-system-overview {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: #F76F8E;
+}
+
+.solar-system-overview p {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  padding: 15px 35px;
+  max-width: 800px;
+  border: 2px solid #424B54;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #424B54;
+  margin: 0 20px;
+}
+
+.solar-system-overview h2 {
+  font-size: 5rem;
+  color: #fff;
+  text-align: left;
+  margin: 0 20px;
+}
+
+.planet-info, .moons-info, .objects-info {
+  display: none;
+  padding: 10px 25px;
+  margin-top: 10px;
+  width: 35vw;
+  margin: auto;
+}
+
+.planet-info {
+  background-color: #99D5C9;
+}
+
+.moons-info {
+  background-color: #424B54;
+}
+
+.objects-info {
+  background-color: #172A3A;
+}
+
+.dropdown-btn, .dropdown-btn-moons, .dropdown-btn-objects {
+  padding: 10px 25px;
+  width: 40vw;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  margin: 30px auto;
+  box-shadow: 5px 5px 0px;
+  transition: box-shadow 0.3s ease;
+}
+
+.dropdown-btn {
+  background-color: #99D5C9;
+  color: #172A3A;
+  border: 2px solid #172A3A;
+}
+
+.dropdown-btn-moons {
+  background-color: #424B54;
+  color: #fffd78;
+  border: 2px solid #fffd78;
+}
+
+.dropdown-btn-objects {
+  background-color: #172A3A;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.dropdown-btn:hover {
+  box-shadow: 8px 8px 0px #172A3A;
+}
+
+.dropdown-btn-moons:hover {
+  box-shadow: 8px 8px 0px #fffd78;
+}
+
+.dropdown-btn-objects:hover {
+  box-shadow: 8px 8px 0px #fff;
+}
+
+.planets {
+  background-color: #99D5C9;
+  padding: 50px 35px;
+}
+
+.planets-btn {
+  text-align: center;
+}
+
+.planets h2 {
+  font-size: 3rem;
+  color: #fffd78;
+}
+
+.planets ul {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #99D5C9;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #fff;
+}
+
+.moons {
+  background-color: #424B54;
+  padding: 50px 0;
+}
+
+.moons h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.solar-system-objects {
+  background-color: #172A3A;
+  padding: 50px 0;
+}
+
+.solar-system-objects h2 {
+  color: #57978b;
+  font-size: 3rem;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  .planet-info, .moons-info, .objects-info {
+    width: 50vw;
+  }
+
+  .dropdown-btn, .dropdown-btn-moons, .dropdown-btn-objects {
+    width: 90vw;
+  }
+
+  .solar-system-overview {
+    padding: 20px;
+    height: auto;
+  }
+
+  .solar-system-overview h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .solar-system-overview p {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0;
+    width: 90vw;
+  }
+
+  .planet-gif {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+
+  .scroll-down-btn-overview {
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 50vw;
+  }
+
+  .scroll-down-btn-planets {
+    background-color: #fff;
+    color: #172A3A;
+    border: 2px solid #fff;
+    margin: 30px auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .planet-info, .moons-info, .objects-info {
+    width: 70vw;
+  }
+
+  .dropdown-btn, .dropdown-btn-moons, .dropdown-btn-objects {
+    width: 80vw;
+  }
+
+  .solar-system-overview h2 {
+    font-size: 2.5rem;
+  }
+
+  .solar-system-overview p {
+    font-size: 0.9rem;
+    padding: 5px 15px;
+    width: 95vw;
+  }
+
+  .planet-gif {
+    width: 70px;
+  }
+
+  .scroll-down-btn-overview {
+    width: 70vw;
+  }
+}
