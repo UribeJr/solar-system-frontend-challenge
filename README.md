@@ -1,3 +1,7 @@
+# Solar System Frontend Challenge
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+
 _This is a submission for [Frontend Challenge v24.09.04](https://dev.to/challenges/frontend-2024-09-04), Glam Up My Markup: Space_
 
 ## What I Built
